@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16rem;
+  margin: 30rem 60rem;
+  background-color: #f2efe8;
+  display: flex;
+  flex-direction: column;
+  gap: 106rem;
+}
+:root {
+  --bg-color: #f2efe8;
+  --bg-card-color: #faf8f3;
+  --text-main-color: #1a2340;
+  --accent-color: #d95a2b;
+  --secondary-text-color: #444444;
+}

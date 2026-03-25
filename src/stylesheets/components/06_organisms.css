@@ -1,0 +1,122 @@
+.O_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.O_HeroBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650rem;
+  background: url(../../images/back_cover_main.jpg);
+  border: 3rem solid #d95a2b;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+
+.O_AboutBlock {
+  width: 100%;
+  display: flex;
+  gap: 24rem;
+}
+
+.O_CardSoundPrimary,
+.O_CardArticlePrimary,
+.O_CardAuthor,
+.O_CardSoundSecondary,
+.O_CardSoundAccent,
+.O_CardArticleAccent,
+.O_CardTest {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+  padding: 20rem;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  width: 400rem;
+}
+.O_CardSoundPrimary a,
+.O_CardArticlePrimary a,
+.O_CardSoundSecondary a,
+.O_CardSoundAccent a,
+.O_CardArticleAccent a,
+.O_CardTest a {
+  text-decoration: none;
+  color: #1a2340;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.O_CardArticlePrimary,
+.O_CardAuthor,
+.O_CardSoundSecondary,
+.O_CardTest {
+  width: 500rem;
+}
+
+.O_TitledPagesBlock {
+  padding: 56rem 36rem;
+  background: url(../../images/back_cover_main.jpg);
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+
+.O_FooterPart {
+  display: flex;
+  flex-direction: column;
+  gap: 44rem;
+}
+.O_FooterNav {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.O_CardSoundSecondary {
+  gap: 0rem;
+}
+.O_CardSoundSecondary a {
+  gap: 106rem;
+}
+
+.O_CardSoundAccent {
+  width: 835rem;
+  background-color: #d95a2b;
+}
+.O_CardSoundAccent a {
+  color: #faf8f3;
+}
+
+.O_CardArticleAccent {
+  width: 800rem;
+  flex-direction: row;
+  gap: 32rem;
+}
+.O_OrangeCardArticleAccent {
+  background-color: #d95a2b;
+}
+
+.O_Facts,
+.O_SoundPart {
+  background-color: #d95a2b;
+  padding: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+.O_InfoBlock {
+  display: flex;
+  gap: 24rem;
+}
+.O_InfoPart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24rem;
+}
+.O_SoundPart {
+  background-color: #faf8f3;
+  gap: 32rem;
+}

@@ -1,0 +1,93 @@
+.M_Navigation ul {
+  display: flex;
+  gap: 24rem;
+}
+.M_TitleBlockMain {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  align-items: center;
+}
+.M_PromoBlockHero {
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+  align-items: center;
+}
+
+.M_AboutCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+  padding: 30rem;
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+}
+.M_BlockText {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.M_SoundTitle,
+.M_ArticleTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.M_CardText {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.M_TitleBlockPages {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.M_TitllePageBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+}
+
+.M_NavSite {
+  align-items: center;
+}
+.M_NavSite,
+.M_UnivInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.M_Students,
+.M_Social {
+  display: flex;
+  gap: 24rem;
+}
+
+.M_TagsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.M_RowTags {
+  display: flex;
+  gap: 16rem;
+}
+
+.O_CardSoundSecondary .M_CardTextBlock {
+  gap: 106rem;
+}
+
+.O_CardArticleAccent .M_CardTextBlock {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.O_CardTest .M_CardTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}

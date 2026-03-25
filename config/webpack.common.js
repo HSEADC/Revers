@@ -34,17 +34,21 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|svg|webp|gif)$/i,
-        type: "assets/resource",
+        type: "asset/resource",
         generator: {
           filename: "images/[hash][ext][query]",
         },
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        type: "assets/resource",
+        type: "asset/resource",
         generator: {
           filename: "fonts/[hash][ext][query]",
         },
+      },
+      {
+        test: /\.(mp3)$/i,
+        type: "asset/resource",
       },
     ],
   },

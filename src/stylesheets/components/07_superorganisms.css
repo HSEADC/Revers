@@ -1,0 +1,21 @@
+.SO_HeroSection,
+.SO_SoundsBlock,
+.SO_ArticlesBlock,
+.SO_Footer,
+.SO_AuthorBlock,
+.SO_CardsBlock,
+.SO_CardsPartBlock,
+.SO_InfoSoundBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+
+.SO_Footer {
+  gap: 20rem;
+}
+
+.SO_CardsPartBlock,
+.SO_InfoSoundBlock {
+  gap: 24rem;
+}
