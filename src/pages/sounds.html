@@ -52,7 +52,7 @@
               <a href="about.html" class="A_LinkNavigation">О нас</a>
             </li>
             <li>
-              <a href="sounds.html" class="A_LinkNavigation">Звуки</a>
+              <a href="sounds.html" class="A_LinkNavigation active">Звуки</a>
             </li>
             <li>
               <a href="tests.html" class="A_LinkNavigation">Тесты</a>
@@ -65,7 +65,7 @@
             </li>
           </ul>
         </div>
-        <a href="" class="A_HeaderButton">Случайный звук</a>
+        <a href="#" class="A_HeaderButton" id="randomSoundBtn">Случайный звук</a>
       </section>
       <section class="O_TitledPagesBlock">
         <div class="M_TitllePageBlock">
@@ -82,21 +82,33 @@
     <section class="SO_CardsBlock">
       <div class="M_TagsBlock">
         <div class="M_RowTags">
-          <div class="A_Tag">Все</div>
-          <div class="A_Tag">Домашние технологии</div>
-          <div class="A_Tag">Городская среда</div>
-          <div class="A_Tag">Общественные места</div>
+          <div class="A_Tag all active">Все</div>
+          <div class="A_Tag home">Домашние технологии</div>
+          <div class="A_Tag city">Городская среда</div>
+          <div class="A_Tag place">Общественные места</div>
         </div>
-        <input type="text" class="A_InputSearch" />
+        <div class="A_InputSearch">
+          <svg class="Q_SearchIcon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" stroke="#1a2340" stroke-width="2" fill="none"/>
+            <line x1="16" y1="16" x2="21" y2="21" stroke="#1a2340" stroke-width="2"/>
+          </svg>
+        
+          <input 
+            type="text" 
+            class="A_Search" 
+            id="searchInput"
+            placeholder="Поиск статей..."
+          />
+        </div>
       </div>
 
       <div class="SO_CardsPartBlock">
         <div class="C_SoundCards">
-            <div class="O_CardSoundPrimary">
+            <div class="O_CardSoundPrimary O_IndexSectionCard city">
               <a href="../index.html">
                 <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
               <div class="M_CardTextBlock">
-                <div class="A_TagCard">Домашние технологии</div>
+                <div class="A_TagCard">Городская среда</div>
                 <div class="M_CardText">
                   <p class="A_TitleCard">Windows XP</p>
                   <p class="A_TextCard">Голоса дикторов, фанфары телепередач, шум эфирных помех</p>
@@ -104,37 +116,37 @@
               </a>
               </div>
             </div>
-            <div class="O_CardSoundPrimary">
+            <div class="O_CardSoundPrimary O_IndexSectionCard city">
               <a href="../index.html">
                 <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
               <div class="M_CardTextBlock">
-                <div class="A_TagCard">Домашние технологии</div>
+                <div class="A_TagCard">Городская среда</div>
                 <div class="M_CardText">
-                  <p class="A_TitleCard">Windows XP</p>
+                  <p class="A_TitleCard">10</p>
                   <p class="A_TextCard">Голоса дикторов, фанфары телепередач, шум эфирных помех</p>
                 </div>
               </a>
               </div>
             </div>
-            <div class="O_CardSoundPrimary">
+            <div class="O_CardSoundPrimary O_IndexSectionCard place">
               <a href="../index.html">
                 <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
               <div class="M_CardTextBlock">
-                <div class="A_TagCard">Домашние технологии</div>
+                <div class="A_TagCard">Общественные места</div>
                 <div class="M_CardText">
-                  <p class="A_TitleCard">Windows XP</p>
+                  <p class="A_TitleCard">Сломанный</p>
                   <p class="A_TextCard">Голоса дикторов, фанфары телепередач, шум эфирных помех</p>
                 </div>
               </a>
               </div>
             </div>
-            <div class="O_CardSoundPrimary">
+            <div class="O_CardSoundPrimary O_IndexSectionCard place">
               <a href="../index.html">
                 <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
               <div class="M_CardTextBlock">
-                <div class="A_TagCard">Домашние технологии</div>
+                <div class="A_TagCard">Общественные места</div>
                 <div class="M_CardText">
-                  <p class="A_TitleCard">Windows XP</p>
+                  <p class="A_TitleCard">Телефон</p>
                   <p class="A_TextCard">Голоса дикторов, фанфары телепередач, шум эфирных помех</p>
                 </div>
               </a>
@@ -142,7 +154,18 @@
             </div>
           </div>
           <div class="C_SoundCards">
-            <div class="O_CardSoundSecondary">
+            <div class="O_CardSoundSecondary O_IndexSectionCard home">
+              <a href="../index.html">
+              <div class="M_CardTextBlock">
+                <div class="A_TagCard">Домашние технологии</div>
+                <div class="M_CardText">
+                  <p class="A_TitleCard">Фигня</p>
+                  <p class="A_TextCard">Голоса дикторов, фанфары телепередач, шум эфирных помех</p>
+                </div>
+              </a>
+              </div>
+            </div>
+            <div class="O_CardSoundSecondary O_IndexSectionCard home">
               <a href="../index.html">
               <div class="M_CardTextBlock">
                 <div class="A_TagCard">Домашние технологии</div>
@@ -153,18 +176,7 @@
               </a>
               </div>
             </div>
-            <div class="O_CardSoundSecondary">
-              <a href="../index.html">
-              <div class="M_CardTextBlock">
-                <div class="A_TagCard">Домашние технологии</div>
-                <div class="M_CardText">
-                  <p class="A_TitleCard">Windows XP</p>
-                  <p class="A_TextCard">Голоса дикторов, фанфары телепередач, шум эфирных помех</p>
-                </div>
-              </a>
-              </div>
-            </div>
-            <div class="O_CardSoundSecondary">
+            <div class="O_CardSoundSecondary O_IndexSectionCard home">
               <a href="../index.html">
               <div class="M_CardTextBlock">
                 <div class="A_TagCard">Домашние технологии</div>
@@ -178,7 +190,7 @@
           </div>
       </div>
       <div class="C_SoundCards">
-        <div class="O_CardSoundPrimary">
+        <div class="O_CardSoundPrimary O_IndexSectionCard O_IndexSectionCard home">
             <a href="../index.html">
               <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
             <div class="M_CardTextBlock">
@@ -190,7 +202,7 @@
             </a>
             </div>
           </div>
-          <div class="O_CardSoundPrimary">
+          <div class="O_CardSoundPrimary O_IndexSectionCard home">
             <a href="../index.html">
               <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
             <div class="M_CardTextBlock">
@@ -202,7 +214,7 @@
             </a>
             </div>
           </div>
-          <div class="O_CardSoundAccent">
+          <div class="O_CardSoundAccent O_IndexSectionCard home">
             <a href="../index.html">
               <div class="A_ImageCard"><img src="../images/back_cover_main.jpg" alt="image_card"></div>
             <div class="M_CardTextBlock">

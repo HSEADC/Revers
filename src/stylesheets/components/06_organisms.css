@@ -33,7 +33,29 @@
   border: 2rem solid #1a2340;
   box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
   width: 400rem;
+  transition: all 0.15s ease;
 }
+.O_CardSoundPrimary:hover,
+.O_CardArticlePrimary:hover,
+.O_CardAuthor:hover,
+.O_CardSoundSecondary:hover,
+.O_CardSoundAccent:hover,
+.O_CardArticleAccent:hover,
+.O_CardTest:hover {
+  transform: translate(-2rem, -2rem);
+  box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+}
+.O_CardSoundPrimary:active,
+.O_CardArticlePrimary:active,
+.O_CardAuthor:active,
+.O_CardSoundSecondary:active,
+.O_CardSoundAccent:active,
+.O_CardArticleAccent:active,
+.O_CardTest:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(68, 68, 68, 1);
+}
+
 .O_CardSoundPrimary a,
 .O_CardArticlePrimary a,
 .O_CardSoundSecondary a,
@@ -59,6 +81,12 @@
   background: url(../../images/back_cover_main.jpg);
   border: 2rem solid #1a2340;
   box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+.O_TitlePagesBlockError {
+  padding: 150rem 0rem;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .O_FooterPart {
@@ -97,7 +125,9 @@
 }
 
 .O_Facts,
-.O_SoundPart {
+.O_SoundPart,
+.O_CapsuleInfo,
+.O_CardCapsule {
   background-color: #d95a2b;
   padding: 30rem;
   display: flex;
@@ -105,6 +135,15 @@
   gap: 16rem;
   border: 2rem solid #1a2340;
   box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  transition: all 0.15s ease;
+}
+.O_CardCapsule:hover {
+  transform: translate(-2rem, -2rem);
+  box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+}
+.O_CardCapsule:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(68, 68, 68, 1);
 }
 .O_InfoBlock {
   display: flex;
@@ -119,4 +158,37 @@
 .O_SoundPart {
   background-color: #faf8f3;
   gap: 32rem;
+}
+
+.O_TitlePagesBlockError {
+  height: 650rem;
+}
+
+.O_ArticleHeadBlock {
+  height: 650rem;
+  display: flex;
+  align-items: center;
+}
+.O_ArticleText {
+  width: 900rem;
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+
+.O_CardCapsule {
+  width: 400rem;
+}
+.O_CardCapsuleBlue {
+  background-color: #1a2340;
+}
+.O_CardCapsuleWhite {
+  background-color: #faf8f3;
+}
+
+.O_TestBlock {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
 }

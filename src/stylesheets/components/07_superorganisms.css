@@ -5,7 +5,8 @@
 .SO_AuthorBlock,
 .SO_CardsBlock,
 .SO_CardsPartBlock,
-.SO_InfoSoundBlock {
+.SO_InfoSoundBlock,
+.SO_CapsuleCardBlock {
   display: flex;
   flex-direction: column;
   gap: 36rem;
@@ -18,4 +19,29 @@
 .SO_CardsPartBlock,
 .SO_InfoSoundBlock {
   gap: 24rem;
+}
+
+.SO_Error {
+  background-color: #1a2340;
+  color: #faf8f3;
+}
+
+.SO_ArticleMainText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SO_CapsuleRow {
+  display: flex;
+  gap: 24rem;
+}
+
+.SO_TestBlock {
+  display: flex;
+  gap: 56rem;
+  justify-content: center;
+}
+
+.SO_Body {
+  gap: 56rem;
 }

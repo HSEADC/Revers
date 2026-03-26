@@ -5,7 +5,12 @@ const path = require("path");
 const { plugin } = require("postcss");
 
 module.exports = {
-  entry: "./src/javascripts/index.js",
+  entry: {
+    index: "./src/javascripts/index.js",
+    filter_tags_sound: "./src/javascripts/filter_tags_sound.js",
+    filter_tags_article: "./src/javascripts/filter_tags_article.js",
+    test_sound: "./src/tests/test_sound.js",
+  },
   output: {
     path: path.resolve(".", "docs"),
     filename: "[name].js",
