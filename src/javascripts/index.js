@@ -1,10 +1,24 @@
 import "../stylesheets/style.css";
 
-const pages = ["sound.html"];
+initRandomButton();
 
-document.getElementById("randomButton").addEventListener("click", function (e) {
-  e.preventDefault();
+function initRandomButton() {
+  const btn = document.querySelector("#randomButtonHead");
 
-  const i = Math.floor(Math.random() * pages.length);
-  window.location.href = "./sounds/" + pages[i];
-});
+  if (!btn) return;
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    goToRandomSounds();
+  });
+}
+
+function goToRandomSounds() {
+  const sounds = ["../sounds/sound.html"];
+
+  const randomIndex = Math.floor(Math.random() * sounds.length);
+  const randomPage = sounds[randomIndex];
+
+  window.location.href = randomPage;
+}

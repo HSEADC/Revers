@@ -69,7 +69,7 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="A_HeaderButton" id="randomSoundBtn">Случайный звук</a>
+        <a href="#" class="A_HeaderButton" id="randomButtonHead">Случайный звук</a>
       </section>
       <section class="O_HeroBlock">
         <div class="M_PromoBlockHero">
@@ -165,38 +165,38 @@
         <a href="./pages/articles.html" class="A_HeaderButton">Читать статьи</a>
       </div>
       <div class="C_ArticlesCards">
-        <div class="O_CardArticlePrimary">
-          <a href="index.html">
-            <div class="A_ImageCard"><img src="./images/back_cover_main.jpg" alt="image_card"></div>
+        <div class="O_CardArticlePrimary O_IndexSectionCard psyco">
+          <a href="articles/brain.html">
+            <div class="A_ImageCard"><img src="images/back_cover_main.jpg" alt="image_card"></div>
           <div class="M_CardTextBlock">
-            <div class="A_TagCard">История звука</div>
+            <div class="A_TagCard">Психология</div>
             <div class="M_CardText">
-              <p class="A_TitleCard">Как появился звук ICQ</p>
-              <p class="A_TextCard">Короткий звук «о-оу» стал одним из самых узнаваемых сигналов начала 2000-х. В статье разбираем, как появился этот звук, почему он так быстро закрепился в памяти и каким образом обычное уведомление превратилось в символ эпохи раннего интернета.</p>
+              <p class="A_TitleCard">Что происходит <br>в мозге, когда мы слышим знакомый звук</p>
+              <p class="A_TextCard"> Знакомый звук распознаётся мозгом почти мгновенно и активирует сразу несколько зон, связанных с памятью и эмоциями.</p>
             </div>
           </a>
           </div>
         </div>
-        <div class="O_CardArticlePrimary">
-          <a href="index.html">
-            <div class="A_ImageCard"><img src="./images/back_cover_main.jpg" alt="image_card"></div>
+        <div class="O_CardArticlePrimary O_IndexSectionCard psyco">
+            <a href="articles/dophamine.html">
+                <div class="A_ImageCard"><img src="images/back_cover_main.jpg" alt="image_card"></div>
           <div class="M_CardTextBlock">
-            <div class="A_TagCard">История звука</div>
+            <div class="A_TagCard">Психология</div>
             <div class="M_CardText">
-              <p class="A_TitleCard">Как появился звук ICQ</p>
-              <p class="A_TextCard">Короткий звук «о-оу» стал одним из самых узнаваемых сигналов начала 2000-х. В статье разбираем, как появился этот звук, почему он так быстро закрепился в памяти и каким образом обычное уведомление превратилось в символ эпохи раннего интернета.</p>
+              <p class="A_TitleCard">Почему короткий <br>звук даёт быстрый дофамин</p>
+              <p class="A_TextCard">Короткий звук действует как быстрый сигнал вознаграждения, который мозг обрабатывает почти мгновенно. </p>
             </div>
           </a>
           </div>
         </div>
-        <div class="O_CardArticlePrimary">
-          <a href="index.html">
-            <div class="A_ImageCard"><img src="./images/back_cover_main.jpg" alt="image_card"></div>
+        <div class="O_CardArticlePrimary O_IndexSectionCard history">
+            <a href="articles/evolution.html">
+                <div class="A_ImageCard"><img src="images/back_cover_main.jpg" alt="image_card"></div>
           <div class="M_CardTextBlock">
             <div class="A_TagCard">История звука</div>
             <div class="M_CardText">
-              <p class="A_TitleCard">Как появился звук ICQ</p>
-              <p class="A_TextCard">Короткий звук «о-оу» стал одним из самых узнаваемых сигналов начала 2000-х. В статье разбираем, как появился этот звук, почему он так быстро закрепился в памяти и каким образом обычное уведомление превратилось в символ эпохи раннего интернета.</p>
+              <p class="A_TitleCard">Эволюция телевизионных заставок 90-х</p>
+              <p class="A_TextCard">Телевизионные заставки 90-х быстро изменялись вместе с развитием технологий <br>и визуального языка телевидения. </p>
             </div>
           </a>
           </div>
@@ -253,4 +253,13 @@
       </div>
     </footer>
   </body>
+  <script>
+    const pages = ["sound.html"];
+    document.getElementById("randomButton").addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const i = Math.floor(Math.random() * pages.length);
+      window.location.href = "./sounds/" + pages[i];
+});
+  </script>
 </html>
