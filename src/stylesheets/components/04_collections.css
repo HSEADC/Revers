@@ -1,0 +1,7 @@
+.C_SoundCards,
+.C_ArticlesCards,
+.C_AuthorsCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 24rem;
+}

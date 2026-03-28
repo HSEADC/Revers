@@ -1,0 +1,168 @@
+.M_Navigation ul {
+  display: flex;
+  gap: 24rem;
+}
+.M_TitleBlockMain {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  align-items: center;
+}
+.M_PromoBlockHero {
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+  align-items: center;
+}
+
+.M_AboutCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+  padding: 30rem;
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+}
+.M_BlockText {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.M_SoundTitle,
+.M_ArticleTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.M_CardText {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.M_TitleBlockPages {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.M_TitllePageBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+}
+
+.M_NavSite {
+  align-items: center;
+}
+.M_NavSite,
+.M_UnivInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.M_Students,
+.M_Social {
+  display: flex;
+  gap: 24rem;
+}
+
+.M_TagsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.M_RowTags {
+  display: flex;
+  gap: 16rem;
+}
+
+.O_CardSoundSecondary .M_CardTextBlock {
+  gap: 106rem;
+}
+
+.O_CardArticleAccent .M_CardTextBlock {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.O_CardTest .M_CardTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.M_NavigationError a {
+  color: #faf8f3;
+}
+.O_TitlePagesBlockError .M_TitllePageBlock {
+  margin: auto 0;
+}
+
+.M_TitleBlockArticle {
+  align-items: center;
+}
+.M_TitleArticleBlock {
+  align-items: center;
+  gap: 36rem;
+}
+
+.M_ArticleNavigationBlock {
+  background-color: #faf8f3;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  padding: 20rem;
+  width: 300rem;
+  max-height: fit-content;
+  position: sticky;
+  top: 10rem;
+}
+.M_ArticleNavigationBlock ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.M_ArticleTextPart,
+.M_ArticleTextPartSecondary {
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+.M_ArticleFact {
+  flex-direction: column;
+  display: flex;
+  gap: 16rem;
+  text-align: center;
+  padding: 30rem;
+  background-color: #d95a2b;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+
+.M_ButtonsTest {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+.M_ButtonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 24rem;
+}
+.M_TestPart {
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+.M_TestAnswerMessage input:checked + .A_TestAnswerText {
+  background-color: #d95a2b;
+  color: #faf8f3;
+}
+.M_TestAnswerMessage:hover .A_TestAnswerText {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 3rem 3rem 0rem #1a2340;
+}
+.M_TestAnswerMessage input:active + .A_TestAnswerText {
+  transform: translate(1rem, 1rem);
+  box-shadow: 3rem 3rem 0rem #1a2340;
+}

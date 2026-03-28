@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Light.ttf), url(../fonts/Inter-Light.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../fonts/SpaceGrotesk-Regular.ttf),
+    url(../fonts/SpaceGrotesk-Regular.woff),
+    url(../fonts/SpaceGrotesk-Regular.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../fonts/SpaceGrotesk-Medium.ttf),
+    url(../fonts/SpaceGrotesk-Medium.woff),
+    url(../fonts/SpaceGrotesk-Medium.woff2);
+  font-weight: 600;
+}

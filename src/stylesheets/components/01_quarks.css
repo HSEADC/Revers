@@ -1,0 +1,12 @@
+.Q_Line {
+  border: none;
+  border-top: 2rem solid #1a2340;
+}
+.Q_SearchIcon {
+  position: absolute;
+  left: 18rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16rem;
+  height: 16rem;
+}

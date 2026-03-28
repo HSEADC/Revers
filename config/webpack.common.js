@@ -5,7 +5,15 @@ const path = require("path");
 const { plugin } = require("postcss");
 
 module.exports = {
-  entry: "./src/javascripts/index.js",
+  entry: {
+    index: "./src/javascripts/index.js",
+    filter_tags_sound: "./src/javascripts/filter_tags_sound.js",
+    filter_tags_article: "./src/javascripts/filter_tags_article.js",
+    test_sound: "./src/tests/test_sound.js",
+    test_2000: "./src/tests/test_2000.js",
+    test_era: "./src/tests/test_era.js",
+    test_how: "./src/tests/test_how.js",
+  },
   output: {
     path: path.resolve(".", "docs"),
     filename: "[name].js",
@@ -34,17 +42,21 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|svg|webp|gif)$/i,
-        type: "assets/resource",
+        type: "asset/resource",
         generator: {
           filename: "images/[hash][ext][query]",
         },
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        type: "assets/resource",
+        type: "asset/resource",
         generator: {
           filename: "fonts/[hash][ext][query]",
         },
+      },
+      {
+        test: /\.(mp3)$/i,
+        type: "asset/resource",
       },
     ],
   },
