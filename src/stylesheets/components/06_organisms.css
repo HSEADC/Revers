@@ -192,3 +192,72 @@
   flex-direction: column;
   gap: 36rem;
 }
+
+.O_HeroBlockBrain {
+  background: url(../../images/articles/brain3.png);
+  opacity: 0.6;
+}
+.O_HeroBlockDoph {
+  background: url(../../images/articles/dophamine2.png);
+  opacity: 0.6;
+}
+.O_HeroBlockEv {
+  background: url(../../images/articles/evolution3.png);
+  opacity: 0.8;
+}
+.O_HeroBlockICQ {
+  background: url(../../images/articles/icq1.png);
+  opacity: 0.8;
+}
+.O_HeroBlock56k {
+  background: url(../../images/articles/modem_56k2.png);
+}
+.O_HeroBlockNost {
+  background: url(../../images/articles/nostalgia2.png);
+  opacity: 0.8;
+}
+.O_HeroBlockNotification {
+  background: url(../../images/articles/notification2.png);
+}
+.O_HeroBlockRel {
+  background: url(../../images/articles/relation1.png);
+}
+.O_HeroBlockPower {
+  background: url(../../images/articles/sound_power3.png);
+}
+.O_HeroBlockSignal {
+  background: url(../../images/articles/test_signals1.png);
+}
+.O_HeroBlockWindows {
+  background: url(../../images/articles/windows_xp1.png);
+}
+.O_PromoTest {
+  background: url(../../images/promo_3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.O_HeroAbout {
+  background: url(../../images/promo_4.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.O_HeroSound {
+  background: url(../../images/promo_5.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.O_HeroTest {
+  background: url(../../images/promo_7.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.O_HeroArt {
+  background: url(../../images/promo_3.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

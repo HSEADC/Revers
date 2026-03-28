@@ -4,19 +4,64 @@ initRandomButton();
 
 function initRandomButton() {
   const btn = document.querySelector("#randomButtonHead");
+  const btnPromo = document.querySelector("#randomButton");
 
-  if (!btn) return;
+  if (btn) {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToRandomSounds();
+    });
+  }
 
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    goToRandomSounds();
-  });
+  if (btnPromo) {
+    btnPromo.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToRandomSounds();
+    });
+  }
 }
-
 function goToRandomSounds() {
-  const sounds = ["../sounds/sound.html"];
-
+const sounds = [
+    "/sounds/sound_adsl.html",
+    "/sounds/sound_arcade.html",
+    "/sounds/sound_atm.html",
+    "/sounds/sound_button_phone.html",
+    "/sounds/sound_cash_register.html",
+    "/sounds/sound_cassete_player.html",
+    "/sounds/sound_cassette.html",
+    "/sounds/sound_cd.html",
+    "/sounds/sound_cinema.html",
+    "/sounds/sound_crosswalk.html",
+    "/sounds/sound_dendy.html",
+    "/sounds/sound_floppy.html",
+    "/sounds/sound_gastronom.html",
+    "/sounds/sound_landline_phone.html",
+    "/sounds/sound_library.html",
+    "/sounds/sound_market.html",
+    "/sounds/sound_matrix_printer.html",
+    "/sounds/sound_metro.html",
+    "/sounds/sound_nokia.html",
+    "/sounds/sound_office.html",
+    "/sounds/sound_pager.html",
+    "/sounds/sound_park.html",
+    "/sounds/sound_payphone.html",
+    "/sounds/sound_photo_studio.html",
+    "/sounds/sound_printer.html",
+    "/sounds/sound_ps2.html",
+    "/sounds/sound_radio.html",
+    "/sounds/sound_radioEf.html",
+    "/sounds/sound_school_bell_mechanical.html",
+    "/sounds/sound_sega.html",
+    "/sounds/sound_sewing_machine.html",
+    "/sounds/sound_snow.html",
+    "/sounds/sound_tv.html",
+    "/sounds/sound_typewriter.html",
+    "/sounds/sound_vending_machine.html",
+    "/sounds/sound_vhs.html",
+    "/sounds/sound_vinyl.html",
+    "/sounds/sound_windows.html",
+    "/sounds/sound_xerox.html",
+];
   const randomIndex = Math.floor(Math.random() * sounds.length);
   const randomPage = sounds[randomIndex];
 
