@@ -1,8 +1,6 @@
 const htmlPages = require("./webpack.pages.js");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { type } = require("os");
 const path = require("path");
-const { plugin } = require("postcss");
 
 module.exports = {
   entry: {
@@ -57,6 +55,9 @@ module.exports = {
       {
         test: /\.(mp3)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "audio/[hash][ext][query]",
+        },
       },
     ],
   },
