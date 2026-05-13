@@ -261,3 +261,101 @@
   background-position: top;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 430px) {
+  .O_AboutBlock {
+    flex-direction: column;
+  }
+  .O_CardSoundPrimary,
+  .O_CardArticlePrimary,
+  .O_CardAuthor,
+  .O_CardSoundSecondary,
+  .O_CardSoundAccent,
+  .O_CardArticleAccent,
+  .O_CardTest {
+    width: auto;
+    padding: 40rem;
+    gap: 46rem;
+    border: 8rem solid #1a2340;
+  }
+  .O_HeroBlock {
+    height: 2800rem;
+    border: 8rem solid #d95a2b;
+  }
+  .O_CardSoundPrimary a,
+  .O_CardArticlePrimary a,
+  .O_CardSoundSecondary a,
+  .O_CardSoundAccent a,
+  .O_CardArticleAccent a,
+  .O_CardTest a {
+    gap: 36rem;
+  }
+  .O_TitledPagesBlock {
+    border: 8rem solid #1a2340;
+    height: 2800rem;
+    align-content: center;
+  }
+  .O_FooterPart {
+    gap: 84rem;
+  }
+  .O_CardTest .A_ButtonAbout {
+    color: #faf8f3;
+    font-size: 38rem;
+  }
+  .O_CardTest .M_CardTextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 56rem;
+  }
+  .O_CardArticleAccent {
+    flex-direction: column;
+  }
+  .O_CardArticleAccent .A_ImageCard {
+    width: 100%;
+    height: 750rem;
+  }
+  .O_CardCapsule {
+    width: 100%;
+    padding: 40rem;
+    gap: 36rem;
+  }
+  .O_CardCapsule .A_ButtonMore {
+    font-size: 36rem;
+    padding: 24rem 36rem;
+  }
+  .O_CardCapsule .M_CardText {
+    gap: 30rem;
+  }
+  .O_InfoBlock {
+    flex-direction: column;
+  }
+  .O_SoundPart {
+    gap: 52rem;
+    border: 4rem solid #1a2340;
+    padding: 40rem;
+  }
+  .O_CapsuleInfo {
+    padding: 40rem;
+    gap: 36rem;
+    border: 4rem solid #1a2340;
+    box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+  }
+  .O_InfoBlock .A_ImageSound {
+    border: 4rem solid #1a2340;
+    box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+  }
+  .O_Facts {
+    padding: 30rem;
+    gap: 28rem;
+    border: 4rem solid #1a2340;
+    box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+  }
+
+  .O_ArticleText {
+    width: 100%;
+    gap: 76rem;
+  }
+  .O_TestBlock {
+    width: 100%;
+  }
+}

@@ -107,6 +107,17 @@ const htmlPages = [
   ),
 
   createPage("./src/capsules/1981.html", "./capsules/1981.html", ["index"]),
+  createPage("./src/capsules/1983.html", "./capsules/1983.html", ["index"]),
+  createPage("./src/capsules/1985.html", "./capsules/1985.html", ["index"]),
+  createPage("./src/capsules/1989.html", "./capsules/1989.html", ["index"]),
+  createPage("./src/capsules/1990.html", "./capsules/1990.html", ["index"]),
+  createPage("./src/capsules/1994.html", "./capsules/1994.html", ["index"]),
+  createPage("./src/capsules/1996.html", "./capsules/1996.html", ["index"]),
+  createPage("./src/capsules/1998.html", "./capsules/1998.html", ["index"]),
+  createPage("./src/capsules/2001.html", "./capsules/2001.html", ["index"]),
+  createPage("./src/capsules/2003.html", "./capsules/2003.html", ["index"]),
+  createPage("./src/capsules/2004.html", "./capsules/2004.html", ["index"]),
+  createPage("./src/capsules/2006.html", "./capsules/2006.html", ["index"]),
 
   createPage("./src/tests/test_sound.html", "./tests/test_sound.html", [
     "index",

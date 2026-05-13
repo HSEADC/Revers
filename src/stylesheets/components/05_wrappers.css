@@ -14,3 +14,13 @@
   gap: 16rem;
   padding: 20rem;
 }
+
+@media only screen and (max-width: 430px) {
+  .W_TextWrapper {
+    border: 4rem solid #1a2340;
+    box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+    gap: 36rem;
+    padding: 40rem;
+    width: 100%;
+  }
+}

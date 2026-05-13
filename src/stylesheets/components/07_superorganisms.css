@@ -45,3 +45,16 @@
 .SO_Body {
   gap: 56rem;
 }
+
+@media only screen and (max-width: 430px) {
+  .SO_CapsuleRow {
+    flex-direction: column;
+  }
+  .SO_ArticleMainText {
+    flex-direction: column;
+    gap: 56rem;
+  }
+  .SO_TestBlock {
+    flex-direction: column;
+  }
+}

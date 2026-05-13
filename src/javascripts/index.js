@@ -67,3 +67,10 @@ function goToRandomSounds() {
 
   window.location.href = randomPage;
 }
+const burgerButton = document.querySelector("#burgerButton");
+const mobileMenu = document.querySelector("#mobileMenu");
+
+burgerButton.addEventListener("click", () => {
+  burgerButton.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+});

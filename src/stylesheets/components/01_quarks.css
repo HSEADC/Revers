@@ -10,3 +10,14 @@
   width: 16rem;
   height: 16rem;
 }
+
+@media only screen and (max-width: 430px) {
+  .Q_SearchIcon {
+    position: absolute;
+    left: 18rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36rem;
+    height: 36rem;
+  }
+}
