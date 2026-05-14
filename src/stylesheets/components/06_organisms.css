@@ -261,6 +261,10 @@
   background-position: top;
   background-repeat: no-repeat;
 }
+.O_HeroBlockStyle {
+  background: url(../../images/back_cover_main.jpg);
+  opacity: 0.6;
+}
 
 @media only screen and (max-width: 430px) {
   .O_AboutBlock {

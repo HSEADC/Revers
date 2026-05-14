@@ -11,6 +11,8 @@ module.exports = {
     test_2000: "./src/tests/test_2000.js",
     test_era: "./src/tests/test_era.js",
     test_how: "./src/tests/test_how.js",
+    test_check: "./src/tests/test_check.js",
+    test_find: "./src/tests/test_find.js",
   },
   output: {
     path: path.resolve(".", "docs"),

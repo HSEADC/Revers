@@ -22,6 +22,9 @@ const htmlPages = [
   createPage("./src/pages/tests.html", "./pages/tests.html", ["index"]),
   createPage("./src/pages/404.html", "./pages/404.html", ["index"]),
   createPage("./src/pages/capsules.html", "./pages/capsules.html", ["index"]),
+  createPage("./src/pages/styleguide.html", "./pages/styleguide.html", [
+    "index",
+  ]),
 
   createPage("./src/sounds/sound_windows.html", "./sounds/sound_windows.html", [
     "index",
@@ -105,6 +108,9 @@ const htmlPages = [
     "./articles/notification.html",
     ["index"]
   ),
+  createPage("./src/articles/entrance.html", "./articles/entrance.html", [
+    "index",
+  ]),
 
   createPage("./src/capsules/1981.html", "./capsules/1981.html", ["index"]),
   createPage("./src/capsules/1983.html", "./capsules/1983.html", ["index"]),
@@ -134,6 +140,14 @@ const htmlPages = [
   createPage("./src/tests/test_how.html", "./tests/test_how.html", [
     "index",
     "test_how",
+  ]),
+  createPage("./src/tests/test_check.html", "./tests/test_check.html", [
+    "index",
+    "test_check",
+  ]),
+  createPage("./src/tests/test_find.html", "./tests/test_find.html", [
+    "index",
+    "test_find",
   ]),
 
   createPage("./src/sounds/sound_atm.html", "./sounds/sound_atm.html", [

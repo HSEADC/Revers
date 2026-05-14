@@ -808,21 +808,21 @@
     font-size: 36rem;
   }
 
-  .A_HeadFact {
+  .SO_HeroSection .A_HeadFact {
     font-size: 36rem;
   }
-  .A_TextFact {
+  .SO_HeroSection .A_TextFact {
     font-size: 36rem;
   }
-  .A_Burger {
+  .SO_HeroSection .A_Burger {
     display: flex;
   }
 
-  .A_LinkNavigation {
+  .SO_HeroSection .A_LinkNavigation {
     font-size: 156rem;
   }
 
-  .A_HeaderButton {
+  .SO_HeroSection .A_HeaderButton {
     width: 100%;
     text-align: center;
     box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
@@ -831,35 +831,35 @@
     border: 4rem solid #1a2340;
   }
 
-  .A_Burger.active span:nth-child(1) {
+  .SO_HeroSection .A_Burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(7rem, 7rem);
   }
 
-  .A_Burger.active span:nth-child(2) {
+  .SO_HeroSection .A_Burger.active span:nth-child(2) {
     opacity: 0;
   }
 
-  .A_Burger.active span:nth-child(3) {
+  .SO_HeroSection .A_Burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6rem, -6rem);
   }
 
-  .A_ArticleNav {
+  .SO_HeroSection .A_ArticleNav {
     font-size: 36rem;
   }
-  .A_ArticleTextSubHead {
+  .SO_HeroSection .A_ArticleTextSubHead {
     font-size: 66rem;
   }
-  .A_ArticleMainText {
+  .SO_HeroSection .A_ArticleMainText {
     font-size: 42rem;
   }
-  .A_ArticleTextSubHeadSecondary {
+  .SO_HeroSection .A_ArticleTextSubHeadSecondary {
     font-size: 56rem;
   }
-  .A_ArticleSecondaryText {
+  .SO_HeroSection .A_ArticleSecondaryText {
     font-size: 36rem;
   }
 
-  .A_Logo img {
+  .SO_HeroSection.A_Logo img {
     width: 70%;
   }
 
