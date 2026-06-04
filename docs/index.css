@@ -1,0 +1,1281 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/37b4b1e40239caa91623.ttf), url(fonts/ed9a7ce1dedab5d9333b.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(fonts/c092257afdb650be08eb.ttf),
+    url(fonts/59b9fada6f36e5d8be88.woff),
+    url(fonts/d2780649c491c1b16d36.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(fonts/11c47748414ab8a89db0.ttf),
+    url(fonts/c7b6ba86eb6b8cb5af32.woff),
+    url(fonts/f5ae8289f8abed052179.woff2);
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16rem;
+  margin: 30rem 60rem;
+  background-color: #f2efe8;
+  display: flex;
+  flex-direction: column;
+  gap: 106rem;
+}
+:root {
+  --bg-color: #f2efe8;
+  --bg-card-color: #faf8f3;
+  --text-main-color: #1a2340;
+  --accent-color: #d95a2b;
+  --secondary-text-color: #444444;
+}
+
+
+
+.Q_Line {
+  border: none;
+  border-top: 2rem solid #1a2340;
+}
+.Q_SearchIcon {
+  position: absolute;
+  left: 18rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16rem;
+  height: 16rem;
+}
+
+.A_LinkNavigation {
+  font-family: "Inter";
+  text-decoration: none;
+  font-size: 22rem;
+  letter-spacing: -3%;
+  color: #1a2340;
+  position: relative;
+}
+.A_LinkNavigation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #1a2340;
+  transition: width 0.3s ease;
+}
+.A_LinkNavigation:hover::after {
+  width: 100%;
+}
+.A_LinkNavigation.active::after {
+  width: 100%;
+}
+
+.A_HeaderButton,
+.A_HeaderButtonSound {
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  background-color: #faf8f3;
+  font-size: 22rem;
+  padding: 12rem 16rem;
+  width: 205rem;
+  border: 2rem solid #1a2340;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  text-decoration: none;
+  color: #1a2340;
+  transition: all 0.15s ease;
+}
+.A_HeaderButton:hover,
+.A_HeaderButtonSound:hover,
+.A_FooterButton:hover,
+.A_ButtonTitleBlock:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+}
+.A_HeaderButton:active,
+.A_HeaderButtonSound:active,
+.A_FooterButton:active,
+.A_ButtonTitleBlock:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(68, 68, 68, 1);
+}
+
+.A_HeaderButtonSound {
+  max-width: fit-content;
+  font-size: 18rem;
+  padding: 10rem 12rem;
+}
+.A_TitleMain {
+  font-family: "Space Grotesk", sans-serif;
+  color: #faf8f3;
+  font-weight: 500;
+  letter-spacing: -3%;
+  font-size: 92rem;
+}
+.A_SubtiltleMain {
+  font-family: "Space Grotesk", sans-serif;
+  color: #faf8f3;
+  font-weight: 500;
+  letter-spacing: 0%;
+  font-size: 24rem;
+}
+.A_PromoButton {
+  font-family: "Inter";
+  background-color: #d95a2b;
+  color: #faf8f3;
+  font-size: 24rem;
+  padding: 12rem 36rem;
+  border: 2rem solid #faf8f3;
+  box-shadow: 2rem 2rem 0rem rgba(242, 239, 242, 1);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.A_PromoButton:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 4rem 4rem 0rem rgba(242, 239, 242, 1);
+}
+.A_PromoButton:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(242, 239, 242, 1);
+}
+
+.A_TitleBlock {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 56rem;
+  letter-spacing: -3%;
+}
+.A_TextBlock {
+  font-family: "Inter";
+  font-size: 22rem;
+  line-height: 1.3;
+}
+.A_ButtonAbout,
+.O_InfoPart .A_ButtonAbout {
+  font-family: "Inter";
+  background-color: #1a2340;
+  text-align: center;
+  font-size: 22rem;
+  padding: 12rem 36rem;
+  box-shadow: 2rem 2rem 0rem rgba(242, 239, 242, 1);
+  text-decoration: none;
+  color: #faf8f3;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.A_ButtonAbout:hover,
+.O_InfoPart .A_ButtonAbout:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 4rem 4rem 0rem rgba(242, 239, 242, 1);
+}
+.A_ButtonAbout:active,
+.O_InfoPart .A_ButtonAbout:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(242, 239, 242, 1);
+}
+.A_ButtonAbout::before,
+.O_InfoPart .A_ButtonAbout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(250, 248, 243, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+.A_ButtonAbout:hover::before,
+.O_InfoPart .A_ButtonAbout:hover::before {
+  left: 120%;
+}
+
+.O_InfoPart .A_ButtonAbout {
+  font-size: 20rem;
+}
+.O_CardTest .A_ButtonAbout {
+  color: #faf8f3;
+  font-size: 18rem;
+}
+.A_ImageAbout {
+  width: 50%;
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+}
+.A_ImageAbout img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.A_TagCard,
+.A_TagCardAccent {
+  font-family: "Inter";
+  font-size: 14rem;
+  padding: 10rem 12rem;
+  border: 2rem solid #1a2340;
+  width: max-content;
+  letter-spacing: -3%;
+}
+.A_TagCardAccent,
+.O_OrangeCardArticleAccent .A_TagCard {
+  color: #faf8f3;
+  border: 2rem solid #faf8f3;
+}
+.A_TitleCard,
+.A_TitleCardAccent,
+.O_InfoPart .A_TitleCard {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 36rem;
+  letter-spacing: -3%;
+}
+.A_TitleCardAccent,
+.O_OrangeCardArticleAccent .A_TitleCard {
+  color: #faf8f3;
+}
+.O_InfoPart .A_TitleCard {
+  font-size: 56rem;
+}
+.A_TextCard,
+.A_TextCardAccent {
+  font-family: "Inter";
+  font-size: 18rem;
+  color: #444444;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-height: calc(1.2 * 4 * 1em);
+  overflow: hidden;
+}
+.A_TextCardAccent,
+.O_OrangeCardArticleAccent .A_TextCard {
+  color: #faf8f3;
+}
+.A_ImageCard {
+  width: 100%;
+  height: 250rem;
+}
+.A_ImageCard img,
+.O_CardArticleAccent .A_ImageCard img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.O_CardArticleAccent .A_ImageCard {
+  width: 100%;
+  height: 210rem;
+}
+
+.A_TitlePages {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 58rem;
+  letter-spacing: -3%;
+  color: #faf8f3;
+}
+.A_SubtitlePages {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 1.3;
+  width: 70%;
+  color: #faf8f3;
+}
+.A_ButtonTitleBlock {
+  font-family: "Inter";
+  font-size: 18rem;
+  text-decoration: none;
+  text-align: center;
+  width: 25%;
+  padding: 12rem 36rem;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  background-color: #faf8f3;
+  color: #1a2340;
+  transition: all 0.15s ease;
+}
+
+.A_FooterButton {
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  background-color: #faf8f3;
+  font-size: 22rem;
+  padding: 12rem 16rem;
+  max-width: fit-content;
+  border: 2rem solid #1a2340;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  text-decoration: none;
+  color: #1a2340;
+  transition: all 0.15s ease;
+}
+.A_FooterTg {
+  font-size: 16rem;
+  color: #444444;
+}
+
+.A_Tag {
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  background-color: #faf8f3;
+  font-size: 16rem;
+  padding: 10rem 12rem;
+  border: 2rem solid #1a2340;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  text-decoration: none;
+  color: #1a2340;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+.A_Tag:hover {
+  background-color: #d95a2b;
+  color: #f2efe8;
+}
+.A_Tag.active {
+  background-color: #d95a2b;
+  color: #f2efe8;
+}
+
+.A_HeadFact {
+  color: #f2efe8;
+  opacity: 0.5;
+  font-family: "Inter";
+  font-size: 22rem;
+}
+.A_TextFact {
+  color: #faf8f3;
+  font-family: "Inter";
+  font-size: 22rem;
+}
+.O_InfoBlock .A_ImageSound {
+  width: 100%;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+.O_InfoBlock .A_ImageSound img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.A_Audio {
+  width: 100%;
+}
+
+.A_SubtitlePagesError {
+  font-family: "Inter";
+  font-size: 20rem;
+  margin-top: 20rem;
+}
+
+.A_TitleArticle {
+  text-align: center;
+}
+.A_SubtitleArticle {
+  text-align: center;
+}
+.A_TagArticle {
+  border: 2rem solid #f2efe8;
+  color: #f2efe8;
+}
+
+.A_ArticleNav {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 24rem;
+  color: #444444;
+  text-decoration: none;
+}
+.A_ArticleTextSubHead {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 42rem;
+  letter-spacing: -3%;
+  color: #1a2340;
+}
+.A_ArticleMainText {
+  font-family: "Inter";
+  font-size: 18rem;
+  line-height: 1.3;
+  color: #1a2340;
+}
+.A_ImageArticle {
+  width: 100%;
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+}
+.A_ImageArticle img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.A_ArticleTextSubHeadSecondary,
+.A_ArticleFactHead {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 36rem;
+  letter-spacing: -3%;
+  color: #444444;
+}
+.A_ArticleSecondaryText,
+.A_ArticleFactText {
+  font-family: "Inter";
+  font-size: 16rem;
+  line-height: 1.3;
+  color: #444444;
+}
+.A_ArticleFactHead {
+  color: #f2efe8;
+}
+.A_ArticleFactText {
+  font-size: 20rem;
+  color: #f2efe8;
+}
+
+.A_ButtonCapsule {
+  background-color: #d95a2b;
+  text-align: center;
+  font-size: 20rem;
+  padding: 12rem 36rem;
+  box-shadow: 2rem 2rem 0rem rgba(242, 239, 242, 1);
+  text-decoration: none;
+  color: #faf8f3;
+}
+.A_TitleCapsuleInfo {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 36rem;
+  letter-spacing: -3%;
+  color: #faf8f3;
+}
+.A_TextCapsuleInfo {
+  font-family: "Inter";
+  font-size: 18rem;
+  line-height: 1.3;
+  color: #faf8f3;
+}
+
+.O_CardCapsule .A_TextCard,
+.O_CardCapsule .A_TitleCard {
+  color: #faf8f3;
+}
+.A_ButtonMore {
+  background-color: #f2efe8;
+  color: #1a2340;
+  padding: 12rem 36rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 18rem;
+  border: 1.5rem solid #1a2340;
+  position: relative;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.A_ButtonMore:hover {
+  background-color: #1a2340;
+  color: #f2efe8;
+}
+
+.O_CardCapsule .A_TextCard {
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  max-height: calc(1.2 * 8 * 1em);
+}
+.O_CardCapsuleWhite .A_TitleCard,
+.O_CardCapsuleWhite .A_TextCard {
+  color: #1a2340;
+}
+.O_CardCapsuleWhite .A_ButtonMore {
+  background-color: #1a2340;
+  color: #f2efe8;
+}
+
+.A_NumberOfQuestion {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 16rem;
+  letter-spacing: -3%;
+  color: #444444;
+}
+.A_TestQuestion {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 56rem;
+  letter-spacing: -3%;
+}
+.M_TestAnswerMessage {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.M_TestAnswerMessage input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.A_TestAnswerText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 16rem;
+  border: 3rem solid #1a2340;
+  background-color: #faf8f3;
+  color: #1a2340;
+  font-family: "Inter";
+  font-size: 36rem;
+  text-align: center;
+  box-shadow: 2rem 2rem 0rem #1a2340;
+  transition: 0.2s ease;
+  width: 300rem;
+}
+.A_ImageTest {
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+  width: 50%;
+  height: auto;
+}
+.A_ImageTest img {
+  width: 100%;
+  height: stretch;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.A_ResultImg {
+  width: 1000rem;
+  height: 380rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+}
+.A_ResultHeader {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 42rem;
+  letter-spacing: -3%;
+  text-align: center;
+}
+.A_ResultText {
+  font-family: "Inter";
+  font-size: 18rem;
+  line-height: 1.3;
+  text-align: center;
+}
+.A_ButtonBackTestLink {
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  background-color: #d95a2b;
+  font-size: 22rem;
+  padding: 12rem 16rem;
+  width: 250rem;
+  border: 2rem solid #1a2340;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  transition: all 0.15s ease;
+  align-items: center;
+}
+.A_ButtonBackTestLink a {
+  text-decoration: none;
+  color: #f2efe8;
+}
+
+.A_InputSearch {
+  position: relative;
+  width: 100%;
+  width: 250rem;
+}
+
+.A_Search {
+  width: 100%;
+  padding: 10rem 12rem 10rem 40rem;
+  font-family: "Inter";
+  font-size: 16rem;
+
+  background-color: #faf8f3;
+  border: 2rem solid #1a2340;
+  color: #1a2340;
+
+  box-shadow: 2rem 2rem 0rem #1a2340;
+
+  outline: none;
+  transition: 0.2s ease;
+}
+.A_Search:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 3rem 3rem 0rem #1a2340;
+}
+.A_Search:focus {
+  transform: translate(1rem, 1rem);
+  box-shadow: 2rem 2rem 0rem #1a2340;
+}
+.A_Search::placeholder {
+  color: #444444;
+}
+
+.M_Navigation ul {
+  display: flex;
+  gap: 24rem;
+}
+.M_TitleBlockMain {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  align-items: center;
+}
+.M_PromoBlockHero {
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+  align-items: center;
+}
+
+.M_AboutCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+  padding: 30rem;
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+}
+.M_BlockText {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.M_SoundTitle,
+.M_ArticleTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.M_CardText {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.M_TitleBlockPages {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.M_TitllePageBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 56rem;
+}
+
+.M_NavSite {
+  align-items: center;
+}
+.M_NavSite,
+.M_UnivInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.M_Students,
+.M_Social {
+  display: flex;
+  gap: 24rem;
+}
+
+.M_TagsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.M_RowTags {
+  display: flex;
+  gap: 16rem;
+}
+
+.O_CardSoundSecondary .M_CardTextBlock {
+  gap: 106rem;
+}
+
+.O_CardArticleAccent .M_CardTextBlock {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.O_CardTest .M_CardTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.M_NavigationError a {
+  color: #faf8f3;
+}
+.O_TitlePagesBlockError .M_TitllePageBlock {
+  margin: auto 0;
+}
+
+.M_TitleBlockArticle {
+  align-items: center;
+}
+.M_TitleArticleBlock {
+  align-items: center;
+  gap: 36rem;
+}
+
+.M_ArticleNavigationBlock {
+  background-color: #faf8f3;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  padding: 20rem;
+  width: 300rem;
+  max-height: fit-content;
+  position: sticky;
+  top: 10rem;
+}
+.M_ArticleNavigationBlock ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.M_ArticleTextPart,
+.M_ArticleTextPartSecondary {
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+.M_ArticleFact {
+  flex-direction: column;
+  display: flex;
+  gap: 16rem;
+  text-align: center;
+  padding: 30rem;
+  background-color: #d95a2b;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+
+.M_ButtonsTest {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+.M_ButtonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 24rem;
+}
+.M_TestPart {
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+.M_TestAnswerMessage input:checked + .A_TestAnswerText {
+  background-color: #d95a2b;
+  color: #faf8f3;
+}
+.M_TestAnswerMessage:hover .A_TestAnswerText {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 3rem 3rem 0rem #1a2340;
+}
+.M_TestAnswerMessage input:active + .A_TestAnswerText {
+  transform: translate(1rem, 1rem);
+  box-shadow: 3rem 3rem 0rem #1a2340;
+}
+
+.C_SoundCards,
+.C_ArticlesCards,
+.C_AuthorsCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 24rem;
+}
+
+.W_ResultTest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28rem;
+}
+.W_TextWrapper {
+  border: 3rem solid #1a2340;
+  box-shadow: 3rem 3rem 0rem rgba(68, 68, 68, 1);
+  width: 1000rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rem;
+  padding: 20rem;
+}
+
+.O_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.O_HeroBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650rem;
+  background: url(images/523d2b1568ee1b81be07.jpg);
+  border: 3rem solid #d95a2b;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+
+.O_AboutBlock {
+  width: 100%;
+  display: flex;
+  gap: 24rem;
+}
+
+.O_CardSoundPrimary,
+.O_CardArticlePrimary,
+.O_CardAuthor,
+.O_CardSoundSecondary,
+.O_CardSoundAccent,
+.O_CardArticleAccent,
+.O_CardTest {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+  padding: 20rem;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  width: 400rem;
+  transition: all 0.15s ease;
+}
+.O_CardSoundPrimary:hover,
+.O_CardArticlePrimary:hover,
+.O_CardAuthor:hover,
+.O_CardSoundSecondary:hover,
+.O_CardSoundAccent:hover,
+.O_CardArticleAccent:hover,
+.O_CardTest:hover {
+  transform: translate(-2rem, -2rem);
+  box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+}
+.O_CardSoundPrimary:active,
+.O_CardArticlePrimary:active,
+.O_CardAuthor:active,
+.O_CardSoundSecondary:active,
+.O_CardSoundAccent:active,
+.O_CardArticleAccent:active,
+.O_CardTest:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(68, 68, 68, 1);
+}
+
+.O_CardSoundPrimary a,
+.O_CardArticlePrimary a,
+.O_CardSoundSecondary a,
+.O_CardSoundAccent a,
+.O_CardArticleAccent a,
+.O_CardTest a {
+  text-decoration: none;
+  color: #1a2340;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.O_CardArticlePrimary,
+.O_CardAuthor,
+.O_CardSoundSecondary,
+.O_CardTest {
+  width: 500rem;
+}
+
+.O_TitledPagesBlock {
+  padding: 56rem 36rem;
+  background: url(images/523d2b1568ee1b81be07.jpg);
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+}
+.O_TitlePagesBlockError {
+  padding: 150rem 0rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.O_FooterPart {
+  display: flex;
+  flex-direction: column;
+  gap: 44rem;
+}
+.O_FooterNav {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.O_CardSoundSecondary {
+  gap: 0rem;
+}
+.O_CardSoundSecondary a {
+  gap: 106rem;
+}
+
+.O_CardSoundAccent {
+  width: 835rem;
+  background-color: #d95a2b;
+}
+.O_CardSoundAccent a {
+  color: #faf8f3;
+}
+
+.O_CardArticleAccent {
+  width: 800rem;
+  flex-direction: row;
+  gap: 32rem;
+}
+.O_OrangeCardArticleAccent {
+  background-color: #d95a2b;
+}
+
+.O_Facts,
+.O_SoundPart,
+.O_CapsuleInfo,
+.O_CardCapsule {
+  background-color: #d95a2b;
+  padding: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  border: 2rem solid #1a2340;
+  box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
+  transition: all 0.15s ease;
+}
+.O_CardCapsule:hover {
+  transform: translate(-2rem, -2rem);
+  box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+}
+.O_CardCapsule:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0rem 0rem 0rem rgba(68, 68, 68, 1);
+}
+.O_InfoBlock {
+  display: flex;
+  gap: 24rem;
+}
+.O_InfoPart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24rem;
+}
+.O_SoundPart {
+  background-color: #faf8f3;
+  gap: 32rem;
+}
+
+.O_TitlePagesBlockError {
+  height: 650rem;
+}
+
+.O_ArticleHeadBlock {
+  height: 650rem;
+  display: flex;
+  align-items: center;
+}
+.O_ArticleText {
+  width: 900rem;
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+
+.O_CardCapsule {
+  width: 400rem;
+}
+.O_CardCapsuleBlue {
+  background-color: #1a2340;
+}
+.O_CardCapsuleWhite {
+  background-color: #faf8f3;
+}
+
+.O_TestBlock {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+
+.O_HeroBlockBrain {
+  background: url(images/89b1d9c1dd3cef2c892c.png);
+  opacity: 0.6;
+}
+.O_HeroBlockDoph {
+  background: url(images/cbac19002183cd8ed685.png);
+  opacity: 0.6;
+}
+.O_HeroBlockEv {
+  background: url(images/4b80280ed23b38b28177.png);
+  opacity: 0.8;
+}
+.O_HeroBlockICQ {
+  background: url(images/2f98fc79a7f6ea25fb10.png);
+  opacity: 0.8;
+}
+.O_HeroBlock56k {
+  background: url(images/35fdedc242cfaf45d5ea.png);
+}
+.O_HeroBlockNost {
+  background: url(images/303dd1bb587a89045a04.png);
+  opacity: 0.8;
+}
+.O_HeroBlockNotification {
+  background: url(images/8feaad1f61e805d12d70.png);
+}
+.O_HeroBlockRel {
+  background: url(images/49b3d831a65bf8b953eb.png);
+}
+.O_HeroBlockPower {
+  background: url(images/f00ddb8469d0a2a70ee2.png);
+}
+.O_HeroBlockSignal {
+  background: url(images/665adbf664205983b65b.png);
+}
+.O_HeroBlockWindows {
+  background: url(images/48c49ad77c0f86800fc7.png);
+}
+.O_PromoTest {
+  background: url(images/78769d5eaf540af5d92d.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.O_HeroAbout {
+  background: url(images/e4e65939110fc0d2ea9c.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.O_HeroSound {
+  background: url(images/116d8635c53a07f2ced1.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.O_HeroTest {
+  background: url(images/58ca91a1113bbc005c9e.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.O_HeroArt {
+  background: url(images/78769d5eaf540af5d92d.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.SO_HeroSection,
+.SO_SoundsBlock,
+.SO_ArticlesBlock,
+.SO_Footer,
+.SO_AuthorBlock,
+.SO_CardsBlock,
+.SO_CardsPartBlock,
+.SO_InfoSoundBlock,
+.SO_CapsuleCardBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 36rem;
+}
+
+.SO_Footer {
+  gap: 20rem;
+}
+
+.SO_CardsPartBlock,
+.SO_InfoSoundBlock {
+  gap: 24rem;
+}
+
+.SO_Error {
+  background-color: #1a2340;
+  color: #faf8f3;
+}
+
+.SO_ArticleMainText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SO_CapsuleRow {
+  display: flex;
+  gap: 24rem;
+}
+
+.SO_TestBlock {
+  display: flex;
+  gap: 56rem;
+  justify-content: center;
+}
+
+.SO_Body {
+  gap: 56rem;
+}
+
+
+
