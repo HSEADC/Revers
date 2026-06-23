@@ -655,11 +655,17 @@
 @media (max-width: 768px) {
   .A_Burger {
     display: flex;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .A_Burger span {
+    transform-origin: center;
   }
 
   .M_Navigation {
     position: absolute;
-    top: 80rem;
+    top: 100%;
     right: 0;
     width: 100%;
     padding: 32rem;
@@ -668,8 +674,9 @@
     box-shadow: 2rem 2rem 0rem rgba(68, 68, 68, 1);
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 28rem;
+    box-sizing: border-box;
   }
 
   .M_Navigation.active {
@@ -677,29 +684,34 @@
   }
 
   .M_Navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
     flex-direction: column;
     gap: 24rem;
+    width: 100%;
   }
 
   .A_LinkNavigation {
     font-size: 28rem;
+    display: block;
   }
 
-  .A_HeaderButton {
-    width: 20%;
+  .O_Header .A_HeaderButton {
+    width: 100%;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .A_Burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(7rem, 7rem);
+    transform: translateY(9rem) rotate(45deg);
   }
-
   .A_Burger.active span:nth-child(2) {
     opacity: 0;
   }
-
   .A_Burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6rem, -6rem);
+    transform: translateY(-9rem) rotate(-45deg);
   }
 }
 
@@ -900,5 +912,51 @@
     padding: 28rem 16rem;
     width: 600rem;
     border: 4rem solid #1a2340;
+  }
+
+  .M_Navigation {
+    top: 100%;
+    padding: 40rem 32rem;
+    gap: 36rem;
+    align-items: stretch;
+  }
+
+  .M_Navigation ul {
+    gap: 32rem;
+  }
+
+  .A_LinkNavigation,
+  .SO_HeroSection .A_LinkNavigation {
+    display: block;
+  }
+
+  .O_Header .A_HeaderButton,
+  .SO_HeroSection .A_HeaderButton {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 52rem;
+    padding: 28rem 24rem;
+    box-shadow: 4rem 4rem 0rem rgba(68, 68, 68, 1);
+    border: 4rem solid #1a2340;
+  }
+
+  .A_Burger span,
+  .SO_HeroSection .A_Burger span {
+    width: 70rem;
+    height: 6rem;
+  }
+
+  .A_ArticleMainText {
+    font-size: 46rem;
+  }
+  .A_ArticleTextSubHead {
+    font-size: 102rem;
+  }
+  .A_ArticleNav {
+    font-size: 44rem;
+  }
+  .M_ArticleNavigationBlock {
+    padding: 40rem;
   }
 }
