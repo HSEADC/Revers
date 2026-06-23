@@ -15,6 +15,9 @@
   align-items: center;
 }
 
+.M_CardText {
+  margin-top: 10rem;
+}
 .M_AboutCard {
   width: 50%;
   display: flex;
